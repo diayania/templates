@@ -21,7 +21,7 @@ wanted-pic {
   overflow: hidden;
 }
 
-.wanted img {
+wanted-pic img {
   width: 22.5rem;
   height: 22.5rem;
   object-fit: cover;
