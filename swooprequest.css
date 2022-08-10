@@ -66,6 +66,7 @@ wanted-full {
   padding: 1rem;
   background-color: var(--wantedinfobg);
   color: var(--wantedtext);
+  overflow-y: auto;
   z-index: 1;
   transition: 1s;
 }
