@@ -87,14 +87,5 @@ wanted-ad:hover wanted-name {
 credit-line {
   display: block;
   width: fit-content;
-  color: var(--wantedlogo);
   margin: 0 auto;
-}
-
-credit-line a {
-  color: var(--wantedlogo);
-}
-
-credit-line a:hover {
-  color: var(--wantedtextbg);
 }
