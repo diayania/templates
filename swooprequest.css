@@ -70,6 +70,23 @@ wanted-full {
   z-index: 1;
   transition: 1s;
 }
+  
+wanted-full::-webkit-scrollbar {
+    width: 5px;
+}
+
+wanted-full::-webkit-scrollbar-track {
+    background: var(--wantedtextbg);
+}
+
+wanted-full::-webkit-scrollbar-thumb {
+    background: var(--wantedlogo);
+    border-radius: 5px;
+}
+
+wanted-full::-webkit-scrollbar-thumb:hover {
+    background: var(--wantedname);
+}
 
 wanted-full b, wanted-full em, wanted-full i {
   color: var(--wantedname);
