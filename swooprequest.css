@@ -1,0 +1,109 @@
+.wanted-swoop {
+  box-sizing: border-box;
+  width: fit-content;
+  height: auto;
+  margin: 1rem auto 0.5rem;
+}
+
+wanted-ad {
+  display: block;
+  width: 25rem;
+  height: 25rem;
+  background-color: var(--wantedtext);
+  border: 1px solid var(--wantedtextbg);
+}
+
+wanted-pic {
+  display: block;
+  width: 22.5rem;
+  height: 22.5rem;
+  margin: 1.25rem;
+  overflow: hidden;
+}
+
+wanted-pic img {
+  width: 22.5rem;
+  height: 22.5rem;
+  object-fit: cover;
+}
+
+wanted-name {
+  display: block;
+  font: italic 600 1.5rem/90% "Crimson Text", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  color: var(--wantedname);
+  position: relative;
+  top: -4.65rem;
+  left: 1.25rem;
+  width: 28rem;
+  height: 2.7rem;
+  background-color: var(--wantedtextbg);
+  padding: 0.35rem 0.5rem;
+  z-index: 2;
+  transition: 1s;
+}
+
+wanted-info {
+  display: block;
+  width: 22.5rem;
+  font: 1rem/100% "Barlow Condensed", sans-serif;
+  color: var(--wantedtextbg);
+  text-align: center;
+  position: relative;
+  top: -4.7rem;
+  left: 1.25rem;
+}
+
+wanted-full {
+  display: block;
+  width: 20.5rem;
+  height: 18.3rem;
+  font: 0.85rem/120% "Open Sans", sans-serif;
+  text-align: justify;
+  position: relative;
+  top: -1rem;
+  padding: 1rem;
+  background-color: var(--wantedinfobg);
+  color: var(--wantedtext);
+  overflow-y: auto;
+  z-index: 1;
+  transition: 1s;
+}
+  
+wanted-full::-webkit-scrollbar {
+    width: 5px;
+}
+
+wanted-full::-webkit-scrollbar-track {
+    background: var(--wantedtextbg);
+}
+
+wanted-full::-webkit-scrollbar-thumb {
+    background: var(--wantedlogo);
+    border-radius: 5px;
+}
+
+wanted-full::-webkit-scrollbar-thumb:hover {
+    background: var(--wantedname);
+}
+
+wanted-full b, wanted-full em, wanted-full i {
+  color: var(--wantedname);
+}
+
+wanted-ad:hover wanted-full {
+  transform: translate(0, -19.3rem);
+  transition: 2s;
+}
+
+wanted-ad:hover wanted-name {
+  transform: translate(0, -19.1rem);
+  transition: 2s;
+}
+
+credit-line {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
