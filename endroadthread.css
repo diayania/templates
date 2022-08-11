@@ -100,13 +100,15 @@ endroad-footer a:hover {
 }
 
 endroad-tag {
-  width: 150px;
+  width: fit-content;
+  padding: 0 15px;
   border-right: 1px solid var(--endroadline);
   text-align: center;
 }
 
 endroad-notes {
-  width: 150px;
+  width: fit-content;
+  padding: 0 15px;
   border-left: 1px solid var(--endroadline);
   text-align: center;
 }
