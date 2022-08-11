@@ -109,3 +109,9 @@ endroad-notes {
   border-left: 1px solid var(--endroadline);
   text-align: center;
 }
+
+credit-line {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
