@@ -33,6 +33,8 @@ endroad-gif img {
   height: 200px;
   object-fit: cover;
   float: right;
+  -webkit-mask-image: linear-gradient(to right, transparent 25%, black 75%);
+  mask-image: linear-gradient(to right, transparent 25%, black 75%);
 }
 
 endroad-quote {
