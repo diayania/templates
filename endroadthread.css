@@ -1,0 +1,109 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.endroad {
+  width: 80%;
+  margin: 20px auto;
+  border-top: 4px double var(--endroadline);
+  border-bottom: 4px double var(--endroadline);
+}
+
+endroad-header {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+endroad-gif {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+endroad-gif img {
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+  float: right;
+  border-right: 4px double var(--endroadline);
+  border-bottom: 4px double var(--endroadline);
+  border-radius: 0 0 150px 0;
+  -webkit-mask-image: linear-gradient(to right, transparent 15%, black 85%);
+  mask-image: linear-gradient(to right, transparent 15%, black 85%);
+}
+
+endroad-quote {
+  display: block;
+  width: 80%;
+  height: fit-content;
+  margin-left: 2rem;
+  padding-bottom: 4px;
+  position: relative;
+  top: -30%;
+  font: 700 2rem/75% var(--endroadserif);
+  color: var(--endroadaccent);
+  letter-spacing: .1rem;
+  text-shadow: -2px 2px 2px var(--endroadshadow);
+  border-bottom: 3px double var(--endroadline);
+}
+
+endroad-main {
+  display: block;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  text-align: justify;
+  font: .85rem/110% var(--endroadsans);
+}
+
+endroad-main b, endroad-main em, endroad-main i {
+  color: var(--endroadaccent);
+}
+
+endroad-main a {
+  color: var(--endroadlink);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+endroad-main:first-letter {
+  font: bold 3rem/80% var(--endroadserif);
+  color: var(--endroadaccent);
+  text-shadow: 2px 2px 3px var(--endroadshadow);
+  float: left;
+  padding: 0 10px 5px 0;
+}
+
+endroad-footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1px;
+  width: 100%;
+  height: 1.5rem;
+  margin-bottom: 1rem;
+  font: 300 1rem/100% var(--endroadcondensed);
+  text-transform: uppercase;
+}
+
+endroad-footer a {
+  color: var(--endroadlink);
+  text-decoration: none;
+}
+
+endroad-footer a:hover {
+  color: var(--endroadaccent);
+}
+
+endroad-tag {
+  width: 150px;
+  border-right: 1px solid var(--endroadline);
+  text-align: center;
+}
+
+endroad-notes {
+  width: 150px;
+  border-left: 1px solid var(--endroadline);
+  text-align: center;
+}
