@@ -19,6 +19,12 @@ endroad-gif {
   display: block;
   width: 100%;
   height: 200px;
+  border-right: 4px double var(--endroadline);
+  border-bottom: 4px double var(--endroadline);
+  border-radius: 0 0 150px 0;
+  -webkit-mask-image: linear-gradient(to right, transparent 35%, black 75%);
+  mask-image: linear-gradient(to right, transparent 35%, black 75%);
+  background-color: var(--endroadbg);
   overflow: hidden;
 }
 
@@ -27,11 +33,6 @@ endroad-gif img {
   height: 200px;
   object-fit: cover;
   float: right;
-  border-right: 4px double var(--endroadline);
-  border-bottom: 4px double var(--endroadline);
-  border-radius: 0 0 150px 0;
-  -webkit-mask-image: linear-gradient(to right, transparent 15%, black 85%);
-  mask-image: linear-gradient(to right, transparent 15%, black 85%);
 }
 
 endroad-quote {
