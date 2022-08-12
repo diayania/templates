@@ -201,6 +201,14 @@ input[type=radio]:checked + .page .page-contents > * {
   margin-left: 50px;
 }
 
+.page-contents a {
+  color: var(--text);
+}
+
+.page-contents a:hover {
+  color: var(--titletext);
+}
+
 .page-contents ul {
   margin-left: 100px;
 }
