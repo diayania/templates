@@ -36,7 +36,7 @@
 .gallery {
   display: grid;
   height: 500px;
-  width: 90%;
+  width: 95%;
   margin: 20px auto;
   background-color: var(--mainbg);
   font: var(--sans);
