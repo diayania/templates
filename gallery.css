@@ -17,7 +17,7 @@
   box-sizing: border-box;
 }
 
-label, a {
+.gallery label, .gallery a {
   cursor: pointer;
   user-select: none;
   font: var(--linksans);
@@ -28,7 +28,8 @@ label, a {
   border-bottom: 5px solid rgba(var(--accentfade), 0.4);
   padding: 3px 2px;
 }
-label:hover, a:hover {
+
+.gallery label:hover, .gallery a:hover {
   border-bottom-color: var(--accent);
 }
 
@@ -63,11 +64,11 @@ label:hover, a:hover {
   background: var(--accent);
 }
 
-input[type=radio] {
+.gallery input[type=radio] {
   display: none;
 }
 
-label.nav {
+.gallery label.nav {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,20 +80,23 @@ label.nav {
   transition: background 0.4s, padding-left 0.2s;
   padding-left: 0;
 }
-input[type=radio]:checked + .page + label.nav {
+
+.gallery input[type=radio]:checked + .page + label.nav {
   background: var(--accent);
   color: var(--titletext);
 }
-input[type=radio]:checked + .page + label.nav i {
+
+.gallery input[type=radio]:checked + .page + label.nav i {
   opacity: 1;
   transition: opacity 0.2s;
 }
-label.nav i {
+
+.gallery label.nav i {
   opacity: 0;
   transition: opacity 0.2s;
 }
 
-.page {
+.gallery .page {
   grid-column-start: 1;
   grid-row-start: 2;
   grid-column-end: span 5;
@@ -102,81 +106,102 @@ label.nav i {
   overflow-y: auto;
 }
 
-.page-contents > * {
+.gallery .page-contents > * {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.2s, transform 0.2s;
 }
-.page-contents > *:nth-child(1) {
+
+.gallery .page-contents > *:nth-child(1) {
   transition-delay: 0.4s;
 }
-.page-contents > *:nth-child(2) {
+
+.gallery .page-contents > *:nth-child(2) {
   transition-delay: 0.6s;
 }
-.page-contents > *:nth-child(3) {
+
+.gallery .page-contents > *:nth-child(3) {
   transition-delay: 0.8s;
 }
-.page-contents > *:nth-child(4) {
+
+.gallery .page-contents > *:nth-child(4) {
   transition-delay: 1s;
 }
-.page-contents > *:nth-child(5) {
+
+.gallery .page-contents > *:nth-child(5) {
   transition-delay: 1.2s;
 }
-.page-contents > *:nth-child(6) {
+
+.gallery .page-contents > *:nth-child(6) {
   transition-delay: 1.4s;
 }
-.page-contents > *:nth-child(7) {
+
+.gallery .page-contents > *:nth-child(7) {
   transition-delay: 1.6s;
 }
-.page-contents > *:nth-child(8) {
+
+.gallery .page-contents > *:nth-child(8) {
   transition-delay: 1.8s;
 }
-.page-contents > *:nth-child(9) {
+
+.gallery .page-contents > *:nth-child(9) {
   transition-delay: 2s;
 }
-.page-contents > *:nth-child(10) {
+
+.gallery .page-contents > *:nth-child(10) {
   transition-delay: 2.2s;
 }
-.page-contents > *:nth-child(11) {
+
+.gallery .page-contents > *:nth-child(11) {
   transition-delay: 2.4s;
 }
-.page-contents > *:nth-child(12) {
+
+.gallery .page-contents > *:nth-child(12) {
   transition-delay: 2.6s;
 }
-.page-contents > *:nth-child(13) {
+
+.gallery .page-contents > *:nth-child(13) {
   transition-delay: 2.8s;
 }
-.page-contents > *:nth-child(14) {
+
+.gallery .page-contents > *:nth-child(14) {
   transition-delay: 3s;
 }
-.page-contents > *:nth-child(15) {
+
+.gallery .page-contents > *:nth-child(15) {
   transition-delay: 3.2s;
 }
-.page-contents > *:nth-child(16) {
+
+.gallery .page-contents > *:nth-child(16) {
   transition-delay: 3.4s;
 }
-.page-contents > *:nth-child(17) {
+
+.gallery .page-contents > *:nth-child(17) {
   transition-delay: 3.6s;
 }
-.page-contents > *:nth-child(18) {
+
+.gallery .page-contents > *:nth-child(18) {
   transition-delay: 3.8s;
 }
-.page-contents > *:nth-child(19) {
+
+.gallery .page-contents > *:nth-child(19) {
   transition-delay: 4s;
 }
-.page-contents > *:nth-child(20) {
+
+.gallery .page-contents > *:nth-child(20) {
   transition-delay: 4.2s;
 }
 
-input[type=radio] + .page {
+.gallery  input[type=radio] + .page {
   transition: transform 0.2s;
   transform: translateX(100%);
 }
 
-input[type=radio]:checked + .page {
+.gallery input[type=radio]:checked + .page {
   transform: translateX(0%);
 }
-input[type=radio]:checked + .page .page-contents > * {
+
+.gallery input[type=radio]:checked + .page .page-contents > * {
   opacity: 1;
   transform: translateY(0px);
 }
