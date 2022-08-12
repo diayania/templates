@@ -202,11 +202,11 @@ input[type=radio]:checked + .page .page-contents > * {
 }
 
 .page-contents a {
-  color: var(--text);
+  color: var(--text) !important;
 }
 
 .page-contents a:hover {
-  color: var(--titletext);
+  color: var(--titletext) !important;
 }
 
 .page-contents ul {
