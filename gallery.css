@@ -13,7 +13,7 @@
   --titletext: #F4F4F4;
 }
 
-*, *:after, *:before {
+.gallery *, .gallery *:after, .gallery *:before {
   box-sizing: border-box;
 }
 
